@@ -34,6 +34,7 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  padding: 0;
 }
 
 ul,
@@ -51,23 +52,51 @@ ol {
   text-decoration: none;
 }
 
-.section {
+/* .section {
   padding-top: 120px;
   padding-bottom: 120px;
   max-width: 1440px;
   margin: 0 auto;
-}
+} */
 
 /* або може бути назва .wrapper */
-.container {
+/* .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+} */
+
+/* mobile */
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-body {
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1160px;
+  }
+}
+
+/* body {
   font-family: var(--primary-font);
   color: var(--text);
   background-color: var(--white-text-color);
@@ -90,26 +119,25 @@ body {
 
 .logo-textlight {
   color: var(--light);
-}
+} */
 
-.section-description {
+/* .section-description {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
-}
+} */
 
-.thirdly-title {
+/* .thirdly-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  /* text-align: center; */
   letter-spacing: 0.02em;
   color: var(--dark);
   margin-bottom: 8px;
-}
+} */
 
-.second-title {
+/* .second-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -118,9 +146,9 @@ body {
   text-transform: capitalize;
   color: var(--dark);
   margin-bottom: 72px;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -131,13 +159,83 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /* ====================== /COMPONENTS ===================== */
 
 /* ======================== HEADER ======================== */
 
+@media screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+}
+
+.page-headr-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-header {
+  padding: 24px 16px;
+}
+
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+}
+
+/* ==== mobile menu ===== */
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: wheat;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition-property: opacity, visibility;
+  transition-duration: var(--tra-dur);
+  transition-timing-function: var(--tra-tim-fun);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-container {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.mobile-menu-close-btn {
+  position: absolute;
+  top: 41px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* .page-header {
   background-color: #ffffff;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -227,13 +325,13 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--navigation-active);
-}
+} */
 
 /* ======================== /HEADER ========================  */
 
 /* ======================== HERO ========================  */
 
-.hero {
+/* .hero {
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: #2e2f42;
@@ -249,12 +347,6 @@ body {
   height: 600px;
   margin: 0 auto;
 }
-
-/* .hero-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .hero-content-title {
   width: 496px;
@@ -300,13 +392,13 @@ body {
   background-color: var(--navigation-active);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
 /* ======================== /HERO ======================== */
 
 /* ======================== ABOUT ======================== */
 
-.about {
+/* .about {
   background-color: #ffffff;
 }
 
@@ -349,13 +441,13 @@ body {
 
 .about-item.icon-astronaut::before {
   background-image: url(../images/about/astronaut.svg);
-}
+} */
 
 /* ======================== /ABOUT ========================  */
 
 /* ======================== OFFER ========================  */
 
-.offer {
+/* .offer {
   background-color: #ffffff;
 }
 .section-offer {
@@ -368,7 +460,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-}
+} */
+
 /* ======================== /OFFER ======================== */
 
 /* ======================== EMPLOYEES ======================== */
@@ -377,14 +470,15 @@ body {
   background-color: #f4f4fd;
 }
 
-.employees {
+/* .employees {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  /* третій спосіб через gap */
-  /* justify-content: space-between; */
-  /* перший спосіб не підходить бо можуть добавлятися співробітники і між фото буде простір, так як приєимається по боках */
-}
+  gap: 24px; */
+
+/* третій спосіб через gap */
+/* justify-content: space-between; */
+/* перший спосіб не підходить бо можуть добавлятися співробітники і між фото буде простір, так як приєимається по боках */
+/* } */
 
 /* .employees-item {
   flex-basis: calc((100%-72px) / 4);
@@ -398,9 +492,9 @@ body {
 
 .employees-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 48px;
-} */
+} Не треба*/
 
-.employees-item-content-wrapper {
+/* .employees-item-content-wrapper {
   padding-top: 32px;
   padding-left: 16px;
   padding-right: 16px;
@@ -457,12 +551,12 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-}
+} */
 
 /* ======================== /EMPLOYEES ======================== */
 /* ======================== CUSTOMERS ========================== */
 
-.customers {
+/* .customers {
   background-color: #ffffff;
 }
 
@@ -504,12 +598,12 @@ body {
 .customer-link .customer-icon:hover,
 .customer-link .customer-icon:focus {
   fill: var(--navigation-active);
-}
+} */
 
 /* ======================== /CUSTOMERS ========================= */
 /* ======================== FOOTER ======================== */
 
-.footer {
+/* .footer {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -518,11 +612,11 @@ body {
 }
 
 .footer-content-wrapper {
-  display: flex;
-  /* gap: 120px; */
-}
+  display: flex; */
+/* gap: 120px; не треба гап*/
+/* } */
 
-.footer-content {
+/* .footer-content {
   width: 264px;
 }
 
@@ -657,13 +751,13 @@ body {
 
 .footer-form-button-icon {
   fill: var(--white-text-color);
-}
+} */
 
 /* ======================== /FOOTER ========================  */
 
 /* ======================== MODAL WINDOW ========================  */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -727,12 +821,12 @@ body {
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--white-text-color);
-}
+} */
 
 /* ======================== /MODAL WINDOW ======================== */
 /* ========================  MODAL FORM ======================== */
 
-.modal-form-title {
+/* .modal-form-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -818,16 +912,16 @@ body {
   border-color: var(--primary-brand);
 }
 
-.modal-form-message::placeholder {
-  /* text-transform: uppercase; */
-  font-weight: 400;
+.modal-form-message::placeholder { */
+/* text-transform: uppercase; не треба */
+/* font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
-}
+} */
 
-.modal-form-check-desc {
+/* .modal-form-check-desc {
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -891,13 +985,13 @@ body {
   background-color: var(--navigation-active);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
 /* ======================== /MODAL FORM ======================== */
 
 /* ======================= PORTFOLIO ========================= */
 
-.section-portfolio {
+/* .section-portfolio {
   padding-bottom: 120px;
   max-width: 1440px;
   margin: 0 auto;
@@ -982,11 +1076,11 @@ body {
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 
-/* Overlay Portfolio */
+/* ==========================Overlay Portfolio======================= */
 
-.portfolio-list-img-wrapper {
+/* .portfolio-list-img-wrapper {
   position: relative;
   overflow: hidden;
 }
@@ -1031,6 +1125,6 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-}
+} */
 
 /*======================= /PORTFOLIO =========================   */

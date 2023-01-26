@@ -42,6 +42,16 @@
             </li>
           </ul>
         </nav>
+        <button
+          type="button"
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <!--Contacts-->
         <ul class="list contacts">
           <li class="contact-item">
@@ -56,12 +66,26 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobail-menu_close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modalsvg"></use>
+            </svg>
+          </button>
+          <ul>
+            <li><a href="">Studio</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!--Sections-->
-    <main>
-      <!--HERO-->
-      <section class="hero">
+    <!-- <main> -->
+    <!--HERO-->
+    <!-- <section class="hero">
         <div class="container hero-content-wrapper">
           <h1 class="main-title hero-content-title">
             Effective Solutions for Your Business
@@ -74,10 +98,10 @@
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
 
-      <!--About us-->
-      <section class="about section">
+    <!--About us-->
+    <!-- <section class="about section">
         <div class="container">
           <h2 class="visually-hidden">About us</h2>
           <ul class="list aboutus">
@@ -111,10 +135,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!--Offer-->
-      <section class="offer section-offer" id="portfolio">
+    <!--Offer-->
+
+    <!-- <section class="offer section-offer" id="portfolio">
         <div class="container">
           <h2 class="second-title">What Are We Doing</h2>
           <ul class="list weoffer">
@@ -144,10 +169,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!--Employees-->
-      <section class="ourteam section">
+    <!--Employees-->
+
+    <!-- <section class="ourteam section">
         <div class="container">
           <h2 class="second-title">Our Team</h2>
           <ul class="list employees">
@@ -321,10 +347,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!--Customers-->
-      <section class="customers section">
+    <!--Customers-->
+    <!-- <section class="customers section">
         <div class="container">
           <h2 class="second-title">Customers</h2>
           <ul class="list customers-list">
@@ -373,10 +399,10 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-content-wrapper">
         <div class="footer-content">
           <a class="logo link" href="index.html"
@@ -441,19 +467,23 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
     <!--/Footer-->
 
     <!-- Modal WINDOW -->
-    <div class="backdrop is-hidden" data-modal>
+
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-modalsvg"></use>
           </svg>
-        </button>
-        <!-- Form elements -->
-        <p class="modal-form-title">
+        </button> -->
+
+    <!-- Form elements -->
+
+    <!-- <p class="modal-form-title">
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form">
@@ -526,8 +556,9 @@
           </label>
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
-      </div>
-    </div>
-    <script src="./js/modal.js"></script>
+      </div> -->
+    <!-- </div>
+    <script src="./js/modal.js"></script> -->
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
