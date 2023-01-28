@@ -68,35 +68,12 @@ ol {
   padding-right: 15px;
 } */
 
-/* mobile */
 .container {
   padding-left: 16px;
   padding-right: 16px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 428px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* tablet */
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-/* desktop */
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1160px;
-  }
-}
-
-/* body {
+body {
   font-family: var(--primary-font);
   color: var(--text);
   background-color: var(--white-text-color);
@@ -119,25 +96,25 @@ ol {
 
 .logo-textlight {
   color: var(--light);
-} */
+}
 
-/* .section-description {
+.section-description {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
-} */
+}
 
-/* .thirdly-title {
+.thirdly-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
   margin-bottom: 8px;
-} */
+}
 
-/* .second-title {
+.second-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -146,9 +123,9 @@ ol {
   text-transform: capitalize;
   color: var(--dark);
   margin-bottom: 72px;
-} */
+}
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -159,86 +136,16 @@ ol {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 /* ====================== /COMPONENTS ===================== */
 
 /* ======================== HEADER ======================== */
 
-@media screen and (max-width: 480px) {
-  .menu {
-    display: none;
-  }
-  .contacts {
-    display: none;
-  }
-}
-
-.page-headr-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .page-header {
-  padding: 24px 16px;
-}
-
-.mobile-menu-open {
-  background-color: transparent;
-  border: none;
-  line-height: 0;
-}
-
-/* ==== mobile menu ===== */
-
-.mobile-menu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  background-color: wheat;
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition-property: opacity, visibility;
-  transition-duration: var(--tra-dur);
-  transition-timing-function: var(--tra-tim-fun);
-}
-
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.mobile-menu-container {
-  position: relative;
-  padding-left: 40px;
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
-.mobile-menu-close-btn {
-  position: absolute;
-  top: 41px;
-  right: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-/* .page-header {
   background-color: #ffffff;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
   max-width: 1440px;
   margin: 0 auto;
@@ -246,7 +153,7 @@ ol {
 
 .page-headr-container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .page-nav {
@@ -259,14 +166,8 @@ ol {
   align-items: center;
 }
 
-.contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
 .logo-header {
-  margin-right: 76px;
+  margin-right: 120px;
 }
 
 .menu-item {
@@ -274,10 +175,6 @@ ol {
 }
 
 .menu-item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.mail {
   margin-right: 40px;
 }
 
@@ -312,6 +209,61 @@ ol {
   bottom: -24px;
 }
 
+/* ==== MOBILE MENU ===== */
+
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: wheat;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition-property: opacity, visibility;
+  transition-duration: var(--tra-dur);
+  transition-timing-function: var(--tra-tim-fun);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-container {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+
+.mobile-menu-close-btn {
+  position: absolute;
+  top: 41px;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ==== /MOBILE MENU ===== */
+
 .contact-link {
   font-weight: 400;
   line-height: 1.5;
@@ -325,7 +277,7 @@ ol {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--navigation-active);
-} */
+}
 
 /* ======================== /HEADER ========================  */
 
@@ -447,28 +399,15 @@ ol {
 
 /* ======================== OFFER ========================  */
 
-/* .offer {
-  background-color: #ffffff;
-}
-.section-offer {
-  padding-bottom: 120px;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.weoffer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-} */
+/* we dont have the offer section in the mobile and tablet menu */
 
 /* ======================== /OFFER ======================== */
 
 /* ======================== EMPLOYEES ======================== */
 
-.ourteam {
+/* .ourteam {
   background-color: #f4f4fd;
-}
+} */
 
 /* .employees {
   display: flex;
@@ -556,17 +495,23 @@ ol {
 /* ======================== /EMPLOYEES ======================== */
 /* ======================== CUSTOMERS ========================== */
 
-/* .customers {
+/* .customers > .container {
+  min-width: 428px;
+} */
+
+.customers {
   background-color: #ffffff;
 }
 
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  justify-content: center;
+  gap: 72px 16px;
 }
+
 .customer-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
 }
 
@@ -598,7 +543,7 @@ ol {
 .customer-link .customer-icon:hover,
 .customer-link .customer-icon:focus {
   fill: var(--navigation-active);
-} */
+}
 
 /* ======================== /CUSTOMERS ========================= */
 /* ======================== FOOTER ======================== */

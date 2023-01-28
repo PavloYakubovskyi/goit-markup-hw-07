@@ -16,6 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <style>
       /* ... */
     </style>
@@ -49,7 +50,7 @@
           aria-controls="mobile-menu"
         >
           <svg class="mobile-menu-open_icon" width="32" height="22">
-            <use href="./images/icons.svg#icon-menu"></use>
+            <use href="./images/icons.svg#icon-menu-burger"></use>
           </svg>
         </button>
         <!--Contacts-->
@@ -73,19 +74,29 @@
               <use href="./images/icons.svg#icon-close-modalsvg"></use>
             </svg>
           </button>
-          <ul>
+          <ul class="list">
             <li><a href="">Studio</a></li>
             <li><a href="">Portfolio</a></li>
             <li><a href="">Contacts</a></li>
+          </ul>
+          <ul class="list">
+            <li>
+              <a class="link" href="tel:+11(000)111-11-11">+11(000)111-11-11</a>
+            </li>
+            <li>
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </header>
 
     <!--Sections-->
-    <!-- <main> -->
-    <!--HERO-->
-    <!-- <section class="hero">
+    <main>
+      <!--HERO-->
+      <!-- <section class="hero">
         <div class="container hero-content-wrapper">
           <h1 class="main-title hero-content-title">
             Effective Solutions for Your Business
@@ -100,8 +111,8 @@
         </div>
       </section> -->
 
-    <!--About us-->
-    <!-- <section class="about section">
+      <!--About us-->
+      <!-- <section class="about section">
         <div class="container">
           <h2 class="visually-hidden">About us</h2>
           <ul class="list aboutus">
@@ -137,9 +148,9 @@
         </div>
       </section> -->
 
-    <!--Offer-->
+      <!--Offer-->
 
-    <!-- <section class="offer section-offer" id="portfolio">
+      <section class="offer section-offer" id="portfolio">
         <div class="container">
           <h2 class="second-title">What Are We Doing</h2>
           <ul class="list weoffer">
@@ -169,11 +180,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!--Employees-->
+      <!--Employees-->
 
-    <!-- <section class="ourteam section">
+      <!-- <section class="ourteam section">
         <div class="container">
           <h2 class="second-title">Our Team</h2>
           <ul class="list employees">
@@ -349,8 +360,8 @@
         </div>
       </section> -->
 
-    <!--Customers-->
-    <!-- <section class="customers section">
+      <!--Customers-->
+      <section class="customers section">
         <div class="container">
           <h2 class="second-title">Customers</h2>
           <ul class="list customers-list">
@@ -399,7 +410,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!--Footer-->
     <!-- <footer class="footer">
