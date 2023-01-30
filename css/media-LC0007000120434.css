@@ -17,9 +17,9 @@
   }
 }
 
-/*============== /MOBILE ================ */
+/*============== /MOBILE ======= */
 
-/*============== TABLET ================= */
+/*============== TABLET ======= */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -34,39 +34,40 @@
     display: none;
   }
 
-  /* ========== ABOUT TABLET ============= */
+  /* ABOUT tablet */
 
   .thirdly-title {
-    text-align: left;
+    text-align: start;
   }
 
   .aboutus {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .about-item {
-    width: calc((100% - 24px) / 2);
+    flex-basis: calc((100%-24px) / 2);
+    /* flex-wrap: wrap; */
   }
 
-  .about-item:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
+  .about-item:not(:nth-child(2n)) {
+    margin-right: 24px;
   }
 
-  /* ========== EMPLOYEES TABLET ============= */
-
-  .employees {
+  /* .aboutus {
     display: flex;
+  }
+
+  .about-item {
+    flex-basis: calc((100%-24px) / 2);
     flex-wrap: wrap;
-    gap: 64px 24px;
-  }
+  } */
 
-  .employees-item:not(:last-child) {
-    margin-bottom: 0;
-  }
+  /* .about-item:not(:nth-child(2n)) {
+    margin-right: 24px;
+  } */
 
-  /* ========== CUSTOMERS TABLET ============= */
+  /* CUSTOMERS tablet*/
 
   .customers-list {
     gap: 72px 24px;
@@ -77,9 +78,9 @@
   }
 }
 
-/*============== /TABLET ============== */
+/*============== /TABLET ======= */
 
-/*============== DESKTOP ===================== */
+/*============== DESKTOP ======= */
 @media screen and (min-width: 1200px) {
   .container {
     width: 1160px;
@@ -103,7 +104,7 @@
     margin-right: 40px;
   }
 
-  /* ========== OFFER DESKTOP ============= */
+  /* OFFER desktop*/
 
   .offer {
     background-color: #ffffff;
@@ -120,17 +121,28 @@
     flex-wrap: wrap;
     gap: 24px;
   }
-  /* ========== ABOUT DESKTOP ============= */
+
+  /* ABOUT desktop*/
+
+  .aboutus {
+    display: flex;
+  }
+
   .about-item {
-    flex-basis: calc((100% - 72px) / 4);
+    flex-basis: calc((100%-72px) / 4);
+    flex-wrap: wrap;
   }
 
   .about-item:not(:nth-child(4n)) {
     margin-right: 24px;
   }
 
-  .about-item:not(:empty) {
-    margin-bottom: 0;
+  /* .about-item {
+    flex-basis: calc((100%-72px) / 4);
+  }
+
+  .about-item:not(:nth-child(4n)) {
+    margin-right: 24px;
   }
 
   .about-item::before {
@@ -159,15 +171,9 @@
 
   .about-item.icon-astronaut::before {
     background-image: url(../images/about/astronaut.svg);
-  }
-
-  /* ========== EMPLOYEES DESKTOP ============= */
-
-  /* .employees-item {
-    flex-basis: calc((100%-72px) / 4);
   } */
 
-  /* ========== CUSTOMERS DESKTOP ============= */
+  /* CUSTOMERS desktop */
 
   .customers-list {
     gap: 24px;
