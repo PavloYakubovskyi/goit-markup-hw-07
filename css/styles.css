@@ -450,8 +450,12 @@ body {
   background-color: #ffffff;
 }
 
-.about-item:not(:last-child) {
+.about-item {
   margin-bottom: 72px;
+}
+
+.about-item:last-child {
+  margin-bottom: 0px;
 }
 
 .thirdly-title {

@@ -43,11 +43,19 @@
   .aboutus {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-around; */
   }
 
   .about-item {
     width: calc((100% - 24px) / 2);
+  }
+
+  .about-item:nth-child(2n + 1) {
+    margin-right: 24px;
+  }
+
+  .about-item {
+    margin-bottom: 64px;
   }
 
   .about-item:nth-last-child(-n + 2) {
@@ -129,8 +137,8 @@
     margin-right: 24px;
   }
 
-  .about-item:not(:empty) {
-    margin-bottom: 0;
+  .about-item:nth-last-child(-n + 4) {
+    margin-bottom: 0px;
   }
 
   .about-item::before {
