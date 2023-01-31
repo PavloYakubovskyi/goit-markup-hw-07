@@ -396,26 +396,17 @@ body {
   margin: 0 auto;
 }
 
-.hero-content-wrapper {
-  padding-left: 54px;
-  padding-right: 56px;
-}
-
 .hero-content-title {
-  /* width: 496px; */
-  /* width: 318px; */
+  max-width: 318px;
   margin: 0 auto;
-  /* padding-bottom: 48px; */
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .main-title {
   font-weight: 700;
-  /* font-size: 56px; */
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
-  /* letter-spacing: 0.02em; */
   color: var(--white-text-color);
 }
 

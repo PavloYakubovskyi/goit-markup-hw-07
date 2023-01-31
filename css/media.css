@@ -12,6 +12,7 @@
   .menu {
     display: none;
   }
+
   .contacts {
     display: none;
   }
@@ -32,6 +33,17 @@
 
   .mobile-menu-open {
     display: none;
+  }
+
+  /*============== HERO tablet ================= */
+
+  .hero-content-title {
+    max-width: 494px;
+    margin-bottom: 40px;
+  }
+
+  .main-title {
+    font-size: 56px;
   }
 
   /* ========== ABOUT TABLET ============= */
@@ -111,7 +123,13 @@
     margin-right: 40px;
   }
 
-  /* ========== OFFER DESKTOP ============= */
+  /* ========== HERO desktop ============= */
+
+  .hero-content-title {
+    margin-bottom: 48px;
+  }
+
+  /* ========== OFFER desktop ============= */
 
   .offer {
     background-color: #ffffff;
@@ -128,7 +146,7 @@
     flex-wrap: wrap;
     gap: 24px;
   }
-  /* ========== ABOUT DESKTOP ============= */
+  /* ========== ABOUT desktop ============= */
   .about-item {
     flex-basis: calc((100% - 72px) / 4);
   }
@@ -169,13 +187,13 @@
     background-image: url(../images/about/astronaut.svg);
   }
 
-  /* ========== EMPLOYEES DESKTOP ============= */
+  /* ========== EMPLOYEES desktop ============= */
 
   /* .employees-item {
     flex-basis: calc((100%-72px) / 4);
   } */
 
-  /* ========== CUSTOMERS DESKTOP ============= */
+  /* ========== CUSTOMERS desktop ============= */
 
   .customers-list {
     gap: 24px;
