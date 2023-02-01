@@ -44,6 +44,11 @@
     width: 768px;
   }
 
+  /* .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  } */
+
   .page-header {
     padding-bottom: 10px;
   }
@@ -68,6 +73,10 @@
   }
 
   /*============== HERO tablet ================= */
+
+  .hero {
+    padding-bottom: 108px;
+  }
 
   .hero-content-title {
     max-width: 494px;
@@ -107,6 +116,10 @@
   }
 
   /* ========== EMPLOYEES tablet ============= */
+
+  .section-team {
+    padding-bottom: 104px;
+  }
 
   .employees {
     display: flex;
@@ -154,12 +167,23 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .contact-link {
+    font-size: 12px;
+  }
+}
+
 /*============== /TABLET ============== */
 
 /*============== DESKTOP ===================== */
 @media screen and (min-width: 1200px) {
   .container {
     width: 1158px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .logo-header {
@@ -181,6 +205,11 @@
   }
 
   /* ========== HERO desktop ============= */
+
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
 
   .hero-content-title {
     margin-bottom: 48px;
@@ -246,9 +275,11 @@
 
   /* ========== EMPLOYEES desktop ============= */
 
-  /* .employees-item {
-    flex-basis: calc((100%-72px) / 4);
-  } */
+  .section-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 1440px;
+  }
 
   /* ========== CUSTOMERS desktop ============= */
 
@@ -257,6 +288,11 @@
   }
 
   /* ========== FOOTER desktop ============= */
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
   .footer-content-wrapper {
     display: flex;

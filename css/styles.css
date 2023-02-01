@@ -53,8 +53,8 @@ ol {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -172,6 +172,7 @@ body {
 
 .menu-link {
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
@@ -373,8 +374,8 @@ body {
 /* ======================== HERO ========================  */
 
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -385,7 +386,7 @@ body {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
-  height: 600px;
+  /* height: 600px; */
   margin: 0 auto;
 }
 
@@ -463,6 +464,12 @@ body {
 /* ======================== /OFFER ======================== */
 
 /* ======================== EMPLOYEES ======================== */
+
+.section-team {
+  padding-top: 96px;
+  padding-bottom: 128px;
+  margin: 0 auto;
+}
 
 .ourteam {
   background-color: #f4f4fd;
@@ -620,8 +627,8 @@ body {
 
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -636,6 +643,7 @@ body {
 
 .footer-description {
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--accent);
