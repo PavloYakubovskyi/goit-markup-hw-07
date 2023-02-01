@@ -16,6 +16,23 @@
   .contacts {
     display: none;
   }
+
+  .footer-content {
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .footer-soc-content {
+    margin-bottom: 72px;
+  }
+
+  .footer-content-wrapper {
+    text-align: center;
+  }
+
+  .footer-form-submit {
+    margin: 0 auto;
+  }
 }
 
 /*============== /MOBILE ================ */
@@ -61,7 +78,7 @@
     font-size: 56px;
   }
 
-  /* ========== ABOUT TABLET ============= */
+  /* ========== ABOUT tablet ============= */
 
   .thirdly-title {
     text-align: left;
@@ -89,7 +106,7 @@
     margin-bottom: 0px;
   }
 
-  /* ========== EMPLOYEES TABLET ============= */
+  /* ========== EMPLOYEES tablet ============= */
 
   .employees {
     display: flex;
@@ -101,7 +118,7 @@
     margin-bottom: 0;
   }
 
-  /* ========== CUSTOMERS TABLET ============= */
+  /* ========== CUSTOMERS tablet ============= */
 
   .customers-list {
     gap: 72px 24px;
@@ -109,6 +126,31 @@
 
   .customer-item {
     max-width: 168px;
+  }
+
+  /* ========== FOOTER tablet ============= */
+
+  .footer-content-wrapper {
+    padding-left: 108px;
+  }
+
+  .footer-content-soc-wrapper {
+    display: flex;
+    gap: 24px;
+    text-align: left;
+  }
+
+  .footer-soc-content {
+    margin-left: 0;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-form-input {
+    margin-bottom: 0;
   }
 }
 
@@ -212,6 +254,17 @@
 
   .customers-list {
     gap: 24px;
+  }
+
+  /* ========== FOOTER desktop ============= */
+
+  .footer-content-wrapper {
+    display: flex;
+    padding-left: 15px;
+  }
+
+  .footer-content-soc-wrapper {
+    gap: 120px;
   }
 }
 
