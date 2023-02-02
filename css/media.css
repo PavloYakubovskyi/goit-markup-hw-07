@@ -38,6 +38,20 @@
   }
 }
 
+/* ======= IMAGES MOBILE === */
+/* Hero images mobile*/
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 678px),
+  screen and (min-resolution: 192dpi) and (max-width: 768px),
+  screen and (min-resolution: 2dppx) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-mobile-people-office@2x.jpg);
+  }
+}
+
 /*============== /MOBILE ================ */
 
 /*============== TABLET ================= */
@@ -208,6 +222,30 @@
   }
 }
 
+/* ======= IMAGES TABLET === */
+/* Hero images tablet*/
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-tablet-people-office.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-tablet-people-office@2x.jpg);
+  }
+}
+
 /*============== /TABLET ============== */
 
 /*============== DESKTOP ===================== */
@@ -369,6 +407,30 @@
 
   .footer-content {
     margin-bottom: 72px;
+  }
+}
+
+/* ======= IMAGES DESCTOP === */
+/* Hero images */
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-desktop-people-office.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-desktop-people-office@2x.jpg);
   }
 }
 
