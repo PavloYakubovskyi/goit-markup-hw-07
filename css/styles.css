@@ -225,7 +225,6 @@ body {
   transition-property: opacity, visibility;
   transition-duration: var(--tra-dur);
   transition-timing-function: var(--tra-tim-fun);
-  box-shadow: 0 0 0 100px #ffffff;
 }
 
 .is-open {
@@ -318,7 +317,6 @@ body {
   display: flex;
   margin-top: 48px;
   justify-content: space-between;
-  /* gap: 56px; */
 }
 
 .mobile-soc-item {
