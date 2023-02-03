@@ -225,7 +225,6 @@ body {
   transition-property: opacity, visibility;
   transition-duration: var(--tra-dur);
   transition-timing-function: var(--tra-tim-fun);
-  /* box-shadow: 0 0 0 100px #ffffff; */
 }
 
 .is-open {
@@ -288,8 +287,10 @@ body {
 /* mobile menu contacts */
 
 .mobile-phone-item {
+  display: flex;
+  justify-content: space-between;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.1;
   margin-bottom: 40px;
   color: var(--primary-brand);
@@ -315,7 +316,7 @@ body {
 .mobile-soc-list {
   display: flex;
   margin-top: 48px;
-  gap: 56px;
+  justify-content: space-between;
 }
 
 .mobile-soc-item {
