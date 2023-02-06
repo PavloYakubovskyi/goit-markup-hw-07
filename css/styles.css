@@ -55,7 +55,6 @@ ol {
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -373,7 +372,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
   /* height: 600px; */
   margin: 0 auto;
 }
@@ -627,7 +625,6 @@ body {
   background-color: #2e2f42;
   padding-top: 96px;
   padding-bottom: 96px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -1015,7 +1012,6 @@ body {
 .section-portfolio {
   padding-bottom: 48px;
   /* padding-bottom: 120px; */
-  /* max-width: 1440px; */
   margin: 0 auto;
 }
 
